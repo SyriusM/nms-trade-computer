@@ -1,0 +1,671 @@
+{
+ "_source": "Extracted from game data dumps (NMSE Resources/json Trade.json and en-GB language table). Names and values as shown in game.",
+ "economy_names": {
+  "MINING": [
+   "Mining",
+   "Minerals",
+   "Ore Extraction",
+   "Prospecting"
+  ],
+  "TECH": [
+   "High Tech",
+   "Technology",
+   "Nano-construction",
+   "Engineering"
+  ],
+  "TRADE": [
+   "Mercantile",
+   "Trading",
+   "Shipping",
+   "Commercial"
+  ],
+  "MANUFACT": [
+   "Manufacturing",
+   "Industrial",
+   "Construction",
+   "Mass Production"
+  ],
+  "ALLOY": [
+   "Advanced Materials",
+   "Alchemical",
+   "Metal Processing",
+   "Material Fusion"
+  ],
+  "SCIENCE": [
+   "Scientific",
+   "Research",
+   "Experimental",
+   "Mathematical"
+  ],
+  "POWER": [
+   "Power Generation",
+   "Energy Supply",
+   "Fuel Generation",
+   "High Voltage"
+  ]
+ },
+ "economy_names_pl": {
+  "ALLOY": [
+   "MATERIAŁY ZAAWANSOWANE"
+  ],
+  "MANUFACT": [
+   "Produkcja"
+  ],
+  "MINING": [
+   "Wydobycie"
+  ],
+  "POWER": [
+   "Wytwarzanie energii"
+  ],
+  "SCIENCE": [
+   "Naukowy"
+  ],
+  "TECH": [
+   "Wysoka technologia"
+  ],
+  "TRADE": [
+   "Handel"
+  ]
+ },
+ "wealth_names": {
+  "LOW": [
+   "Struggling",
+   "Fledgling",
+   "Unpromising",
+   "Declining",
+   "Failing",
+   "Destitute",
+   "Low Supply",
+   "Unsuccessful"
+  ],
+  "MED": [
+   "Comfortable",
+   "Balanced",
+   "Promising",
+   "Developing",
+   "Medium Supply",
+   "Satisfactory",
+   "Sustainable",
+   "Adequate"
+  ],
+  "HIGH": [
+   "Wealthy",
+   "Prosperous",
+   "Advanced",
+   "Affluent",
+   "Booming",
+   "Flourishing",
+   "High Supply",
+   "Opulent"
+  ]
+ },
+ "conflict_names": {
+  "LOW": [
+   "Peaceful",
+   "Low",
+   "Tranquil",
+   "Relaxed",
+   "Gentle",
+   "Stable",
+   "Untroubled",
+   "Trivial",
+   "Unthreatening",
+   "Mild"
+  ],
+  "MED": [
+   "Intermittent",
+   "Medium",
+   "Sporadic",
+   "Unstable",
+   "Fractious",
+   "Unruly",
+   "Boisterous",
+   "Testy",
+   "Belligerent",
+   "Rowdy"
+  ],
+  "HIGH": [
+   "High",
+   "Dangerous",
+   "At War",
+   "Lawless",
+   "Perilous",
+   "Alarming",
+   "Critical",
+   "Formidable",
+   "Destructive",
+   "Aggressive"
+  ]
+ },
+ "pirate": {
+  "economy": "Black Market",
+  "conflict": "Pirate Controlled"
+ },
+ "demand_labels": {
+  "MINING": "Economy Demands Minerals",
+  "TECH": "Economy Demands Technology",
+  "TRADE": "Economy Demands Luxuries",
+  "MANUFACT": "Economy Demands Parts",
+  "ALLOY": "Economy Demands Exotic Goods",
+  "SCIENCE": "Economy Demands Scientific Goods",
+  "POWER": "Economy Demands Energy"
+ },
+ "goods": [
+  {
+   "id": "TRA_ALLOY1",
+   "name": "Nanotube Crate",
+   "category": "Alloy",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Construction)"
+  },
+  {
+   "id": "TRA_ALLOY2",
+   "name": "Self-repairing Heridium",
+   "category": "Alloy",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Construction)"
+  },
+  {
+   "id": "TRA_ALLOY3",
+   "name": "Optical Solvent",
+   "category": "Alloy",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Construction)"
+  },
+  {
+   "id": "TRA_ALLOY4",
+   "name": "5d Torus",
+   "category": "Alloy",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Construction)"
+  },
+  {
+   "id": "TRA_ALLOY5",
+   "name": "Superconducting Fibre",
+   "category": "Alloy",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Construction)"
+  },
+  {
+   "id": "TRA_COMMODITY1",
+   "name": "Decrypted User Data",
+   "category": "Commodity",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods"
+  },
+  {
+   "id": "TRA_COMMODITY2",
+   "name": "Star Silk",
+   "category": "Commodity",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods"
+  },
+  {
+   "id": "TRA_COMMODITY3",
+   "name": "Comet Droplets",
+   "category": "Commodity",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods"
+  },
+  {
+   "id": "TRA_COMMODITY4",
+   "name": "Ion Sphere",
+   "category": "Commodity",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods"
+  },
+  {
+   "id": "TRA_COMMODITY5",
+   "name": "Teleport Coordinators",
+   "category": "Commodity",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods"
+  },
+  {
+   "id": "TRA_COMPONENT1",
+   "name": "Enormous Metal Cog",
+   "category": "Component",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Industrial)"
+  },
+  {
+   "id": "TRA_COMPONENT2",
+   "name": "Non-stick Piston",
+   "category": "Component",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Industrial)"
+  },
+  {
+   "id": "TRA_COMPONENT3",
+   "name": "Mesh Decouplers",
+   "category": "Component",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Industrial)"
+  },
+  {
+   "id": "TRA_COMPONENT4",
+   "name": "Holographic Crankshaft",
+   "category": "Component",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Industrial)"
+  },
+  {
+   "id": "TRA_COMPONENT5",
+   "name": "Vector Compressors",
+   "category": "Component",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Industrial)"
+  },
+  {
+   "id": "TRA_ENERGY1",
+   "name": "Spark Canister",
+   "category": "Energy",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Energy Source)"
+  },
+  {
+   "id": "TRA_ENERGY2",
+   "name": "Industrial-grade Battery",
+   "category": "Energy",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Energy Source)"
+  },
+  {
+   "id": "TRA_ENERGY3",
+   "name": "Ohmic Gel",
+   "category": "Energy",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Energy Source)"
+  },
+  {
+   "id": "TRA_ENERGY4",
+   "name": "Experimental Power Fluid",
+   "category": "Energy",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Energy Source)"
+  },
+  {
+   "id": "TRA_ENERGY5",
+   "name": "Fusion Core",
+   "category": "Energy",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Energy Source)"
+  },
+  {
+   "id": "TRA_EXOTICS1",
+   "name": "De-scented Bottles",
+   "category": "Exotic",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Scientific)"
+  },
+  {
+   "id": "TRA_EXOTICS2",
+   "name": "Neutron Microscope",
+   "category": "Exotic",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Scientific)"
+  },
+  {
+   "id": "TRA_EXOTICS3",
+   "name": "Instability Injector",
+   "category": "Exotic",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Scientific)"
+  },
+  {
+   "id": "TRA_EXOTICS4",
+   "name": "Organic Piping",
+   "category": "Exotic",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Scientific)"
+  },
+  {
+   "id": "TRA_EXOTICS5",
+   "name": "Neural Duct",
+   "category": "Exotic",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Scientific)"
+  },
+  {
+   "id": "TRA_MINERALS1",
+   "name": "Dirt",
+   "category": "Mineral",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Minerals)"
+  },
+  {
+   "id": "TRA_MINERALS2",
+   "name": "Unrefined Pyrite Grease",
+   "category": "Mineral",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Minerals)"
+  },
+  {
+   "id": "TRA_MINERALS3",
+   "name": "Bromide Salt",
+   "category": "Mineral",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Minerals)"
+  },
+  {
+   "id": "TRA_MINERALS4",
+   "name": "Polychromatic Zirconium",
+   "category": "Mineral",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Minerals)"
+  },
+  {
+   "id": "TRA_MINERALS5",
+   "name": "Re-latticed Arc Crystal",
+   "category": "Mineral",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Minerals)"
+  },
+  {
+   "id": "TRA_TECH1",
+   "name": "Decommissioned Circuits",
+   "category": "Tech",
+   "base": 1000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.2,
+   "stack": 5,
+   "group": "Trade Goods (Technology)"
+  },
+  {
+   "id": "TRA_TECH2",
+   "name": "Welding Soap",
+   "category": "Tech",
+   "base": 6000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 1.0,
+   "stack": 5,
+   "group": "Trade Goods (Technology)"
+  },
+  {
+   "id": "TRA_TECH3",
+   "name": "Ion Capacitor",
+   "category": "Tech",
+   "base": 15000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.7,
+   "stack": 5,
+   "group": "Trade Goods (Technology)"
+  },
+  {
+   "id": "TRA_TECH4",
+   "name": "Autonomous Positioning Unit",
+   "category": "Tech",
+   "base": 30000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.5,
+   "stack": 5,
+   "group": "Trade Goods (Technology)"
+  },
+  {
+   "id": "TRA_TECH5",
+   "name": "Quantum Accelerator",
+   "category": "Tech",
+   "base": 50000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.4,
+   "stack": 5,
+   "group": "Trade Goods (Technology)"
+  },
+  {
+   "id": "ILLEGAL_PROD1",
+   "name": "Blood Salt",
+   "category": "Smuggled",
+   "base": 2000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD2",
+   "name": "Stolen Dna Samples",
+   "category": "Smuggled",
+   "base": 9000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD3",
+   "name": "Moon Ether",
+   "category": "Smuggled",
+   "base": 18000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD4",
+   "name": "Prismatic Feathers",
+   "category": "Smuggled",
+   "base": 32000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD5",
+   "name": "Grahgrah",
+   "category": "Smuggled",
+   "base": 58000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD6",
+   "name": "Counterfeit Circuits",
+   "category": "Smuggled",
+   "base": 68000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD7",
+   "name": "Banned Weapons",
+   "category": "Smuggled",
+   "base": 83000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  },
+  {
+   "id": "ILLEGAL_PROD8",
+   "name": "First Spawn Relics",
+   "category": "Smuggled",
+   "base": 98000,
+   "buy_markup": 0.1,
+   "low_mod": -0.02,
+   "high_mod": 0.02,
+   "influence": 0.1,
+   "stack": 5,
+   "group": "Smuggled Goods"
+  }
+ ]
+}

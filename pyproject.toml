@@ -1,0 +1,15 @@
+[project]
+name = "nms-trade-computer"
+version = "0.1.0"
+description = "Trade computer for No Man's Sky: reads the save file, tracks systems and advises trade routes"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+fast = ["lz4"]
+
+[project.scripts]
+nmstrade = "nmstrade.main:main"
+
+[tool.setuptools.package-data]
+nmstrade = ["data/*.json"]
